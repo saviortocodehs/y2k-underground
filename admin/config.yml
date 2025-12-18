@@ -13,7 +13,7 @@ collections:
   - name: "homepage"
     label: "Homepage"
     folder: "content/homepage"
-    create: false
+    create: true
     slug: "home"
     fields:
       - { label: "Welcome Title", name: "title", widget: "string" }
@@ -44,7 +44,7 @@ collections:
           - { label: "Bandcamp", name: "bandcamp", widget: "string", required: false }
 
   # ----------------------------
-  # MIXES
+  # MIXES & PLAYLISTS
   # ----------------------------
   - name: "mixes"
     label: "Mixes & Playlists"
@@ -54,7 +54,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Spotify Embed", name: "embed", widget: "string" }
+      - { label: "Spotify Embed URL", name: "embed", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list" }
 
   # ----------------------------
@@ -82,4 +82,4 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Connections (list)", name: "connections", widget: "list" }
+      - { label: "Connections", name: "connections", widget: "list" }
