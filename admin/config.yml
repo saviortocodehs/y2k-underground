@@ -8,7 +8,7 @@ public_folder: "/assets/uploads"
 
 collections:
   # ----------------------------
-  # HOMEPAGE TEXT
+  # HOMEPAGE
   # ----------------------------
   - name: "homepage"
     label: "Homepage"
@@ -21,7 +21,7 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
 
   # ----------------------------
-  # ARTISTS SECTION
+  # ARTISTS
   # ----------------------------
   - name: "artists"
     label: "Artists"
@@ -33,7 +33,7 @@ collections:
       - { label: "Location", name: "location", widget: "string" }
       - { label: "Bio", name: "bio", widget: "text" }
       - { label: "Background Image", name: "background", widget: "image" }
-      - { label: "Favorite Song Embed (Spotify link)", name: "favsong", widget: "string" }
+      - { label: "Favorite Song Embed (Spotify Link)", name: "favsong", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list" }
       - label: "Links"
         name: "links"
@@ -44,7 +44,7 @@ collections:
           - { label: "Bandcamp", name: "bandcamp", widget: "string", required: false }
 
   # ----------------------------
-  # MIXES & PLAYLISTS
+  # MIXES
   # ----------------------------
   - name: "mixes"
     label: "Mixes & Playlists"
