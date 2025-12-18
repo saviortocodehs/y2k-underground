@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>underground.exe — home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body data-page="home">
+  <div class="noise-overlay"></div>
+
+  <div class="site">
+    <header class="site-header">
+      <div class="site-logo">
+        <div class="site-logo-badge">.exe</div>
+        <div class="site-title">underground music signal</div>
+      </div>
+
+      <nav class="site-nav">
+        <span class="chip">
+          <span class="chip-dot"></span>
+          live feed
+        </span>
+        <a href="index.html" class="is-active">home</a>
+        <a href="artists.html">artists</a>
+        <a href="mixes.html">mixes</a>
+        <a href="blog.html">blog</a>
+        <a href="radio.html">radio</a>
+        <a href="scene-map.html">map</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-main">
+          <div class="hero-main-inner">
+            <div class="hero-eyebrow">hello internet, welcome to</div>
+            <h1 class="hero-title">
+              <span>underground.exe</span><br />
+              a tiny blog for big sounds
+            </h1>
+            <p class="hero-subtitle">
+              I write about <strong>underground artists, micro-scenes, DIY labels</strong>, and whatever else is bubbling under the surface.
+              This is half blog, half radio station, half shrine to stuff that deserves more ears.
+            </p>
+
+            <div class="hero-tags">
+              <span class="hero-tag">y2k-coded</span>
+              <span class="hero-tag">ambient club</span>
+              <span class="hero-tag">breakcore / rnb / ???</span>
+              <span class="hero-tag">late-night headphone music</span>
+            </div>
+
+            <p class="hero-footnote">
+              built like an old personal site. updated whenever my brain latches onto a new sound.
+            </p>
+          </div>
+        </div>
+
+        <!-- Spotify block -->
+        <aside class="now-playing" id="spotify-now-playing">
+          <div class="np-art">
+            <div class="np-art-inner">
+              now<br />listening
+            </div>
+          </div>
+          <div class="np-meta">
+            <div class="np-label">spotify status</div>
+            <div class="np-track" id="spotifyTrack">loading…</div>
+            <div class="np-artist" id="spotifyArtist"></div>
+            <div class="np-extra" id="spotifyExtra"></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="grid-two">
+        <section class="panel">
+          <div class="panel-title-row">
+            <h2 class="panel-title">about</h2>
+            <div class="panel-meta">who's behind this</div>
+          </div>
+          <p style="font-size:0.9rem; color:var(--text-soft); line-height:1.5;">
+            This is my little corner to document weird, beautiful, occasionally broken music from
+            people who probably recorded half of it in bedrooms and cracked DAWs.
+            No algorithms, no playlists chasing trends — just scenes, friends, and things I love.
+          </p>
+          <p style="font-size:0.85rem; color:var(--text-muted);">
+            If you make stuff that feels like dial-up dreams, scratched CDs, crowded basements,
+            or soft synth angels, you belong here.
+          </p>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title-row">
+            <h2 class="panel-title">guestbook</h2>
+            <div class="panel-meta">say hi / drop links</div>
+          </div>
+
+          <section class="guestbook">
+            <label for="gbMessage">guestbook (like it’s 2003)</label>
+            <input type="text" id="gbName" placeholder="name / alias" />
+            <textarea id="gbMessage" placeholder="message, link, artist recommendation…"></textarea>
+            <button id="gbSubmit">sign guestbook</button>
+
+            <div class="guestbook-log" id="guestbookLog">
+              <div class="guestbook-entry">
+                <strong>system</strong>: guestbook v0.1 initialized. say something nice.
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© underground.exe · hosted on your future domain.</span>
+      <span>contact / submissions: you@example.com</span>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
