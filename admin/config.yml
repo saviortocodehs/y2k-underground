@@ -1,0 +1,85 @@
+backend:
+  name: github
+  repo: saviortocodehs/y2k-underground
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  # ----------------------------
+  # HOMEPAGE TEXT
+  # ----------------------------
+  - name: "homepage"
+    label: "Homepage"
+    folder: "content/homepage"
+    create: false
+    slug: "home"
+    fields:
+      - { label: "Welcome Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
+
+  # ----------------------------
+  # ARTISTS SECTION
+  # ----------------------------
+  - name: "artists"
+    label: "Artists"
+    folder: "content/artists"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Bio", name: "bio", widget: "text" }
+      - { label: "Background Image", name: "background", widget: "image" }
+      - { label: "Favorite Song Embed (Spotify link)", name: "favsong", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - label: "Links"
+        name: "links"
+        widget: "object"
+        fields:
+          - { label: "Spotify", name: "spotify", widget: "string", required: false }
+          - { label: "SoundCloud", name: "soundcloud", widget: "string", required: false }
+          - { label: "Bandcamp", name: "bandcamp", widget: "string", required: false }
+
+  # ----------------------------
+  # MIXES
+  # ----------------------------
+  - name: "mixes"
+    label: "Mixes & Playlists"
+    folder: "content/mixes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Spotify Embed", name: "embed", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list" }
+
+  # ----------------------------
+  # BLOG POSTS
+  # ----------------------------
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list" }
+
+  # ----------------------------
+  # SCENE MAP
+  # ----------------------------
+  - name: "map"
+    label: "Scene Map"
+    folder: "content/map"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Connections (list)", name: "connections", widget: "list" }
