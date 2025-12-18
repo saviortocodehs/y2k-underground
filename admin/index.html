@@ -3,7 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>underground.exe — dashboard</title>
-    <script src="https://unpkg.com/decap-cms@3.1.0/dist/decap-cms.js"></script>
+    <script>
+  window.CMS_MANUAL_INIT = true;
+</script>
+<script src="https://unpkg.com/decap-cms@3.1.0/dist/decap-cms.js"></script>
+<script>
+  CMS.init();
+</script>
   </head>
   <body>
   </body>
